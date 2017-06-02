@@ -1,0 +1,74 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*头部*/
+header{
+    text-align: left;
+    margin-left: 5%;
+    padding: 1%;
+    font-size: 1.1em;
+}
+/*logo*/
+.logo{
+    margin-left: 1%;
+}
+/*导航菜单*/
+.nav{
+    height: 3em;
+    text-align: center;
+    margin: auto;
+}
+/*导航菜单*/
+#menu{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    /*margin: 50px 0;*/
+    margin: 0 auto;
+    padding: 0 0 0 10px;
+    list-style-type: none;
+    font-size: 13px;
+    background: #00B0F0;
+    height: 40px;
+    border: 2px solid #00B0F0;
+}
+#menu li {
+    float: left;
+    margin-right: 5em;
+}
+#menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #fff;
+}
+
+/* Blue Menu */
+#menu .blue {
+    border: 2px solid #0099CC;
+}
+#menu.blue a {
+    color: #fff;    /*字体颜色*/
+}
+#menu.blue li a:hover, #menu.blue li.active a {
+    color: #90CDFF;  /*选中字体颜色*/
+    background :#0099CC;
+    border-bottom: 2px solid #356AA0;
+}
+
+/*宣传图片*/
+.Propaganda{
+    width: 100%;
+    height: 200px;
+    background: gold;
+}
