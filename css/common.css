@@ -22,50 +22,53 @@ header{
     margin-left: 1%;
 }
 /*导航菜单*/
-.nav{
-    height: 3em;
-    text-align: center;
-    margin: auto;
-}
-/*导航菜单*/
-#menu{
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    /*margin: 50px 0;*/
-    margin: 0 auto;
-    padding: 0 0 0 10px;
-    list-style-type: none;
-    font-size: 13px;
+.nav ul {
     background: #00B0F0;
-    height: 40px;
-    border: 2px solid #00B0F0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    white-space: nowrap; /* 避免文字換行 */
 }
-#menu li {
-    float: left;
-    margin-right: 5em;
+.nav ul li {
+    position: relative; /* 使子選單依照母選單的座標顯示 */
+    width: 8em;
 }
-#menu li a {
+/* 設定母選單的連結樣式 */
+.nav ul li a {
     text-decoration: none;
-    display: block;
-    padding: 0 20px;
-    line-height: 40px;
+    text-align: center;
     color: #fff;
+    padding: 0.8em;
+    display: block;
+    background: url(../img/detail.png) bottom right no-repeat;
 }
-
-/* Blue Menu */
-#menu .blue {
-    border: 2px solid #0099CC;
+/* 當母選單下沒有子選單時，也就是說只有一個連結時，隱藏detail.png */
+.nav ul li a:only-child {
+    background: none;
 }
-#menu.blue a {
-    color: #fff;    /*字体颜色*/
+.nav ul li:hover {
+    background: #0099cc;
 }
-#menu.blue li a:hover, #menu.blue li.active a {
-    color: #90CDFF;  /*选中字体颜色*/
-    background :#0099CC;
-    border-bottom: 2px solid #356AA0;
+.nav ul li:hover > a {
+    color: #0066cc;
 }
-
+.nav ul li:hover > ul {
+    display: block; /* 滑鼠滑入母選單後，顯示子選單 */
+}
+.nav nav > ul > li {
+    display: inline-block; /* 使一級選單排成一橫列 */
+}
+/* 二級選單顯示於一級選單的正下方 */
+.nav ul ul {
+    position: absolute;
+    top: 100%;
+    width: 8em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #cae5ff; /*二级菜单背景*/
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    display: none;
+    color: #000;
+}
 /*宣传图片*/
 .Propaganda{
     width: 100%;
