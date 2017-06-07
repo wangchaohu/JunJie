@@ -64,7 +64,7 @@ header{
     margin: 0;
     padding: 0;
     list-style: none;
-    background: #cae5ff; /*二级菜单背景*/
+    background: #00b0f0;; /*二级菜单背景*/
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     display: none;
     color: #000;
