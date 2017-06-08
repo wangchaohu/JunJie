@@ -75,3 +75,11 @@ header{
     height: 200px;
     background: gold;
 }
+
+/*轮播图片*/
+#box{
+    overflow:hidden;
+    height: 13em;
+    width:100%;
+    color:#ffffff;
+}

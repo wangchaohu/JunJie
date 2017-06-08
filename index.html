@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="有限公司" />
-    <meta name="description" content="有限公司" />
+    <meta name="keywords" content="有限公司"/>
+    <meta name="description" content="有限公司"/>
 
     <link rel="stylesheet" type="text/css" href="css/common.css">
 
     <script type="text/javascript" src="js/headerJs.js"></script>
-
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <title></title>
 </head>
 
@@ -24,7 +24,7 @@
     <div class="logo">
         <img src="img/logo.png" alt="fysjjxd"/>
     </div>
-    <div  class="nav">
+    <div class="nav">
         <nav>
             <ul>
                 <li>
@@ -86,6 +86,92 @@
     <div class="Propaganda">
         <img src="img/logo.png">
     </div>
+    <div class="carousel">
+        <div class='title' style="background: #00B0F0; height: 2em;">
+            <div align="left">俊洁展示</div>
+            <div align="right">更多&gt;</div>
+        </div>
+        <div id = "box">
+            <table  cellpadding="0" border="0" align="left" cellspacing="0">
+
+                <tr>
+                    <td height="85" valign=top id="demo1">
+                        <table width="100%"  border="0" cellspacing="10em" cellpadding="10em">
+                            <tr>
+                            <td>
+                                <a href="#">
+                                    <img src="images/01.jpg" width="128" height="128" border="0">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="images/02.jpg" width="128" height="128" border="0">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="imag/03.jpg" width="128" height="128" border="0">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="imag/04.jpg" width="128" height="128" border="0">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="imag/05.jpg" width="128" height="128" border="0">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="imag/06.jpg" width="128" height="128" border="0">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="imag/07.jpg" width="128" height="128" border="0">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="imag/08.jpg" width="128" height="128" border="0">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="imag/09.jpg" width="128" height="128" border="0">
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#">
+                                    <img src="imag/10.jpg" width="128" height="128" border="0">
+                                </a>
+                            </td>
+                        </tr>
+                        </table>
+                    </td>
+                    <td id= "box2" valign=top>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--轮播图片-->
+    <script>
+        var speed=30;
+        box2.innerHTML=demo1.innerHTML;
+        function Marquee(){
+            if(box2.offsetWidth-box.scrollLeft<=0)
+                box.scrollLeft -= demo1.offsetWidth;
+            else{
+                box.scrollLeft++;
+            }
+        }
+        var MyMar=setInterval(Marquee,speed);
+        box.onmouseover=function() {clearInterval(MyMar)};
+        box.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+    </script>
 </div>
 <footer>
     jflkasjglkas
